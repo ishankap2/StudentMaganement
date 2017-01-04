@@ -1,0 +1,158 @@
+﻿<html>
+<head>
+    <title>Student Manager</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/model.js"></script>
+    <script src="Scripts/jquery-1.9.1.js"></script>
+    <script src="Scripts/jquery.easing.min.js"></script>
+    <script src="Scripts/scrolling-nav.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/scrolling-nav.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="images/school.png" />
+    <meta charset="utf-8" />
+    <style>
+        #map {
+            height: 300px;
+            width: 70%;
+        }
+    </style>
+</head>
+<body ng-app="mode" id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                
+                <a class="navbar-brand page-scroll" href="#page-top">Student Management System</a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a class="page-scroll" href="#register">Register</a></li>
+                    <li><a class="page-scroll" href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <section id="intro" class="intro-section" ng-controller="login">
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="jumbotron">
+                        <h1>Hello, world!</h1>
+                        <p>Here is stwaopj[awioejga asdkfasdkvnh sdaijd;avi;osdn asdvjasdnva; asidva;sodv;a]</p>
+                        <p>...</p>
+                        <p><a class="btn btn-default page-scroll" href="#register" role="button">JOIN WITH US</a></p>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-1"></div>
+
+                <div class="col-lg-3" style="margin-top:20px; background-color: azure">
+
+                    <h3>Login here</h3>
+                    <form>
+                        <div class="row input-group" style="margin-top:30px">
+                            <span class="input-group-addon" id="basic-addon1">@</span>
+                            <input type="text" class="form-control" ng-model="user.username" placeholder="Username" aria-describedby="basic-addon1">
+                        </div>
+                        <div class="row input-group" style="margin-top:20px">
+                            <span class="input-group-addon" id="basic-addon1">@</span>
+                            <input type="password" class="form-control" ng-model="user.password" placeholder="Password" aria-describedby="basic-addon1">
+                        </div>
+                        <div class="row" style="margin-top:20px">
+                            <div class="col-lg-5"> <p><a class="btn btn-default page-scroll" style="margin-top:30px; background-color:#FF00FF" ng-click="log(user)" role="button">Submit</a></p></div>
+                            <div class="col-lg-7"> <p><a class="btn btn-default page-scroll" style="margin-top:30px; background-color:#d34836" ng-click="log_g()" role="button">Login with Google+</a></p></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section -->
+
+    <section id="register" class="register-section">
+        <div class="container">
+            <h2>Register your details</h2>
+            <div class="row" style="padding-top:10px">
+                <div class="col-lg-2"></div>
+                <div class="input-group col-lg-7">
+                    <span class="input-group-addon" id="basic-addon1">@</span>
+                    <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+                </div>
+                <div class="col-lg-3"></div>
+            </div>
+            <div class="row" style="padding-top:10px">
+                <div class="col-lg-2"></div>
+                <div class="input-group col-lg-7">
+                    <span class="input-group-addon" id="basic-addon1">@</span>
+                    <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+                </div>
+                <div class="col-lg-3" style="padding-top:10px"></div>
+            </div>
+            <div class="row style=" padding-top:10px"">
+                <div class="col-lg-2"></div>
+                <div class="input-group col-lg-7">
+                    <span class="input-group-addon" id="basic-addon1">@</span>
+                    <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+                </div>
+                <div class="col-lg-3"></div>
+            </div>
+            <div class="row" style="padding-top:10px">
+                <div class="col-lg-2"></div>
+                <div class="input-group col-lg-7">
+                    <span class="input-group-addon" id="basic-addon1">@</span>
+                    <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+                </div>
+                <div class="col-lg-3"></div>
+            </div>
+
+            <div class="row" style="margin-top:20px">
+                <div class="col-lg-4"></div>
+                <div class="col-lg-2"> <p><a class="btn btn-default page-scroll" style="margin-top:30px; background-color:#FF00FF" ng-click="reg" role="button">Register</a></p></div>
+                <div class="col-lg-2"> <p><a class="btn btn-default page-scroll" style="margin-top:30px; background-color:#d34836" ng-click="reg_g" role="button">Register with Google+</a></p></div>
+                <div class="col-lg-4"></div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact" class="contact-section">
+        <div id="map"></div>
+        <script>
+      function initMap() {
+          var uluru = { lat: 6.8774878, lng: 79.8914972 };
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 10,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+        </script>
+        <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDiM7NjYzDu6oaxK0tSYJVmD8fgjUOweXY&callback=initMap">
+        </script>
+    </section>
+
+
+</body>
+</html>

@@ -1,0 +1,4 @@
+C:\Users\UnicornPRA\documents\visual studio 2015\Projects\StudentManager\StudentMgtDataLayer\bin\Debug\StudentMgtDataLayer.dll
+C:\Users\UnicornPRA\documents\visual studio 2015\Projects\StudentManager\StudentMgtDataLayer\bin\Debug\StudentMgtDataLayer.pdb
+C:\Users\UnicornPRA\documents\visual studio 2015\Projects\StudentManager\StudentMgtDataLayer\obj\Debug\StudentMgtDataLayer.dll
+C:\Users\UnicornPRA\documents\visual studio 2015\Projects\StudentManager\StudentMgtDataLayer\obj\Debug\StudentMgtDataLayer.pdb
